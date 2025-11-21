@@ -1,0 +1,191 @@
+/* Fuente moderna */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap");
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(135deg, #4b79a1, #283e51);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Tarjeta */
+.card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 380px;
+}
+
+/* Título */
+.card h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Contenedor de inputs */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Labels */
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Inputs */
+.input-group input {
+  padding: 12px;
+  font-size: 18px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #4b79a1;
+  outline: none;
+  box-shadow: 0 0 4px rgba(75, 121, 161, 0.4);
+}
+
+/* Estado o mensaje */
+#status {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: #444;
+}
+
+.input-with-flag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px 12px;
+}
+
+.input-with-flag:focus-within {
+  border-color: #4b79a1;
+  box-shadow: 0 0 4px rgba(75, 121, 161, 0.4);
+}
+
+.input-with-flag input {
+  border: none;
+  outline: none;
+  font-size: 18px;
+  width: 100%;
+}
+
+.flag {
+  font-size: 24px;
+}
+
+/* === Estilos compactos para pantallas pequeñas === */
+@media (max-width: 480px) {
+
+  body {
+    padding: 10px;
+  }
+
+  .card {
+    padding: 20px 18px;
+    border-radius: 14px;
+  }
+
+  .card h1 {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .input-group {
+    gap: 10px;
+  }
+
+  label {
+    font-size: 12px;
+  }
+
+  .input-with-flag {
+    padding: 8px 10px;
+    gap: 6px;
+  }
+
+  .flag {
+    font-size: 20px;
+  }
+
+  .symbol {
+    font-size: 16px;
+  }
+
+  .input-with-flag input {
+    font-size: 16px;
+    padding: 6px 0;
+  }
+
+  #status {
+    font-size: 12px;
+  }
+}
+
+.action-btn {
+  width: 100%;
+  background: #4b79a1;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.action-btn:hover {
+  background: #3a607f;
+}
+
+.action-btn:active {
+  transform: scale(0.97);
+}
+
+@media (max-width: 480px) {
+  .action-btn {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+}
+
+#footer-rates {
+  margin-top: 20px;
+  font-size: 14px;
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 10px;
+  color: #333;
+}
+
+#footer-rates p {
+  margin: 4px 0;
+}
+
+
+
+
+

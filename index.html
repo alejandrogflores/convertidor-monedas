@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convertidor de monedas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h1>Convertidor de Monedas</h1>
+
+        <div  class="input-group">
+            <label>Quetzales (GTQ)</label>
+            <div class="input-with-flag">
+                <span class="flag">🇬🇹</span>
+                <span class="symbol">Q</span>
+                <input type="number" id="gtq" placeholder="0.00" inputmode="decimal" pattern="[0-9]*">
+            </div>
+            
+            <label>Dólares (USD)</label>
+            <div class="input-with-flag">
+                <span class="flag">🇺🇸</span>
+                <span class="symbol">$</span>
+                <input type="number" id="usd" placeholder="0.00" inputmode="decimal" pattern="[0-9]*">
+            </div>
+            
+            <label>Colones (CRC)</label>
+            <div class="input-with-flag">
+                <span class="flag">🇨🇷</span>
+                <span class="symbol">₡</span>
+                <input type="number" id="crc" placeholder="0.00" inputmode="decimal" pattern="[0-9]*">
+            </div>
+            
+        </div>
+    
+        <p id="status">Cargando tasas actuales...</p>
+        
+        <button id="clearBtn" class="action-btn">Limpiar valores</button>
+        <div id="footer-rates">
+            <p><strong>Tasa del día:</strong></p>
+            <p id="rate-usd-gtq">USD → GTQ: ...</p>
+            <p id="rate-usd-crc">USD → CRC: ...</p>
+        </div>
+    </div>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>
